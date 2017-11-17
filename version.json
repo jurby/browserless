@@ -1,9 +1,9 @@
 {
-  "Browser": "HeadlessChrome/64.0.3264.0",
+  "Browser": "HeadlessChrome/64.0.3240.0",
   "Protocol-Version": "1.2",
-  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/64.0.3264.0 Safari/537.36",
-  "V8-Version": "6.4.265",
-  "WebKit-Version": "537.36 (@7f3cdc3f76faecc6425814688e3b2b71bf1630a4)",
-  "Debugger-Version": "7f3cdc3f76faecc6425814688e3b2b71bf1630a4",
-  "Puppeteer-Version": "0.13.0"
+  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/64.0.3240.0 Safari/537.36",
+  "V8-Version": "6.3.292",
+  "WebKit-Version": "537.36 (@4662d4766bb2746d290333b8466f8f575892a1d9)",
+  "Debugger-Version": "4662d4766bb2746d290333b8466f8f575892a1d9",
+  "Puppeteer-Version": "0.12.0"
 }
