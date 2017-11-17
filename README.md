@@ -1,7 +1,9 @@
 ![browserless splash logo](assets/splash.png)
 
 
-[Check out a live demo here](https://chrome.browserless.io/?token=6a9aeb7d-9ac1-496f-bcef-8f0297e44917).
+[Check out a live demo here](https://chrome.browserless.io/?token=59732425-a793-44ad-b9f0-8a04a1b92730).
+
+[Docker repo here](https://hub.docker.com/r/browserless/chrome/).
 
 Severless Chrome on your own infrastructure. Each session gets its own clean Chrome context for total isolation. After the session is complete Chrome is shutdown. You can also think of it like a database connection where your app connects to browserless, runs some work, and gets results back. No more worrying about Chrome availability or how to parallelize work as that's done for you seamlessly.
 
@@ -21,11 +23,21 @@ Every Chrome library functions the same at the lowest level: over a websocket co
 
 Your application still runs the script itself (much like a database interaction), which gives you total control over what library you want to chose and when to do upgrades. This is preferable over other solutions as Chrome is still breaking their debugging protocol quite frequently.
 
-## Quickstart
+## Docker Quickstart
 
 1. `docker pull browserless/chrome`
 2. `docker run --shm-size=1gb -p 3000:3000 browserless/chrome`
-3. Visit `http://localhost:3000/debugger` to use the interactive debugger.
+3. Visit `http://localhost:3000/` to use the interactive debugger.
+
+## Node Quickstart
+
+You'll need Node version 8+ to install and run browserless.
+
+1. `git clone https://github.com/joelgriffith/browserless.git`
+2. `cd browserless`
+3. `npm install`
+4. `npm run dev`
+5. Visit `http://localhost:3000/` to use the interactive debugger.
 
 ## Debugger
 
@@ -40,7 +52,7 @@ browserless ships with an interactive debugger that makes writing scripts faster
 
 ## Hosting Providers
 
-You can host this image on just about any major platform that offers hosting for docker. Alternatively, I'd appreciate you giving [browserless a shot](https://browserless.io) as it's built from the top-down for headless browser workflows. It also has a nice list of features:
+You can host this image on just about any major platform that offers hosting for docker. Alternatively, I'd appreciate you giving [browserless a shot](https://browserless.io) as it's built from the ground-up for headless browser workflows. It also has a nice list of features:
 
 - Easily upgrade and toggle between versions at the press of a button. No managing repos and other code artifacts.
 - Never need to update or pull anything from docker. There's literally zero software to install to get started.
