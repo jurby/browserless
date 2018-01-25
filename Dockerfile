@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 # Application parameters and variables
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=80
 ENV application_directory /usr/src/app
 ENV font_directory /usr/share/fonts/noto
 
@@ -87,5 +87,5 @@ RUN npm install -g typescript @types/node &&\
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Expose the web-socket and HTTP ports
-EXPOSE 3000
+EXPOSE 80
 ENTRYPOINT [ "npm", "start" ]
